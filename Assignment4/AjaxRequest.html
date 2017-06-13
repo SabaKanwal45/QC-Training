@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<button type="button" onclick="loadgetRequest()">Request data</button>
+
+<p id="get"> Get Request Data will be shown here</p>
+<button type="button" onclick="loadPostRequest()">Request data</button>
+
+<p id="post"> POST Request Data will be shown here</p>
+
+
+
+<script>
+
+function loadgetRequest()
+{
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("get").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "http://127.0.0.1/index.html", true);
+    xhttp.send();
+}
+function loadPostRequest()
+{
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("post").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("POST", "http://127.0.0.1/index.html", true);
+    xhttp.send();
+}
+</script>
+
+</body>
+</html>
