@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>View Profile</title>
+    <script src="Bookstore.js" ></script>
+    <script>
+         function showallB()
+         {
+             var para=document.getElementById("showbook");
+             para.innerHTML="";
+             for(var i=0;i<allBooks.length;i++)
+             {
+                 ShowBookA(allBooks[i],para);
+             }
+         }
+         function ShowBookA(book,para)
+         {
+             para.innerHTML= para.innerHTML+ "<div style='float: left;margin: 20px; border: 2px solid black;padding:20px'>Title: "+book.btitle+" <br> Author: "+book.author+"<br>Edition: "+book.edition+ " <br>Price: "+ book.price+ "<br>Availability: "+book.quantity+ "Copies <br>  </div>";
+         }
+    </script>
+
+
+</head>
+<body>
+<h1 style="text-align: center"> BOOK STORE</h1>
+<a href="addbook.html" style="margin: 30px"> Add Book</a>
+<a href="showalluser.html" style="margin: 30px"> Show all Users</a>
+<a href="Login.html" style="margin: 30px"> Logout</a>
+<h3 style="text-align: center"> All Books </h3>
+<div id="showbook"></div>
+<script src="Bookstore.js" >  </script>
+<script>
+    //window.onload = alert(localStorage.getItem("UserNames"));
+    document.onload=showallB();
+</script>
+</body>

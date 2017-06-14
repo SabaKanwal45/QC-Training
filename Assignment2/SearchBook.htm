@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Search Book</title>
+    <script src="Bookstore.js" >  </script>
+
+</head>
+<body>
+<h1 style="text-align: center"> BOOK STORE</h1>
+<a href="viewProfile.html" style="margin: 30px"> View Your Profile</a>
+<a href="showallbooks.html" style="margin: 30px"> Show all Books</a>
+<a href="Login.html" style="margin: 30px"> Logout</a>
+<h3 style="text-align: center"> Search BOOK</h3>
+<form id="search" style="text-align: center; border: 2px solid black; background-color: antiquewhite;width: 300px; padding: 30px; margin-left: 450px">
+    Title:<br><input type="text" name="title" maxlength="20"><br>
+    Author:<br><input type="text" name="author" maxlength="20"><br>
+    <input type="button" onclick="SearchBook()" value="Search Books" > <br>
+</form>
+<div id="showbook" >
+
+</div>
+</body>
