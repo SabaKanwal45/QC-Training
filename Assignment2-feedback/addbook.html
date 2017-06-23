@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+   <script src="Bookstore.js" ></script>
+</head>
+<body>
+<h1 style="text-align: center"> BOOK STORE</h1>
+<a href="showallBadmin.html" style="margin: 30px"> Show all Books</a>
+<a href="showalluser.html" style="margin: 30px"> Show all Users</a>
+<a href="Login.html" style="margin: 30px"> Logout</a>
+<form id="add" style="text-align: center; border: 2px solid black; background-color: antiquewhite;width: 400px; padding: 30px; margin-left: 450px">
+    ISBN:<br><input type="number" name="isbn" ><br>
+    Title:<br><input type="text" name="title" ><br>
+    Author:<br><input type="text" name="author" ><br>
+    Edition:<br><input type="number" name="edition" ><br>
+    Price:<br><input type="number" name="price" ><br>
+    Quantity:<br><input type="number" name="quantity" ><br>
+    <input type="button" onclick="read_addbook_form()" value="Add Book" >
+</form>
+
+</body>
+</html>

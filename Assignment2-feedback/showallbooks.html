@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>View Profile</title>
+
+
+</head>
+<body>
+<h1 style="text-align: center"> BOOK STORE</h1>
+<a href="viewProfile.html" style="margin: 30px"> View your Profile</a>
+<a href="SearchBook.htm" style="margin: 30px"> Search Books</a>
+<a href="Login.html" style="margin: 30px"> Logout</a>
+<h3 style="text-align: center"> All Books </h3>
+<div id="showbook"></div>
+<script src="Bookstore.js" >  </script>
+<script>
+    //window.onload = alert(localStorage.getItem("UserNames"));
+    document.onload=showall();
+</script>
+</body>
